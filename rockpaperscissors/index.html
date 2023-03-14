@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<head>
+    <style>
+        #multiple-game-button {
+            display: block;
+        }
+
+        #multiple-options,
+        #your-gun,
+        #select-button,
+        #start-button {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <select id="options">
+        <option value="rock">rock</option>
+        <option value="paper">paper</option>
+        <option value="scissors">scissors</option>
+    </select>
+    <p id="result"></p>
+    <button onclick="computerWin()">computerWin</button>
+    <button onclick='randomGame()'>randomGame</button>
+    <p>=========== More options ===========</p>
+    <p>You can add more options:</p>
+    <input type="text" id="gun-input" value="rock,paper,scissors">
+    <br/><br/>
+    <button id="multiple-game-button" onclick='openMultipleGame()'>Start</button>
+    <br /><br />
+    <select multiple id="multiple-options"></select>
+    <br />
+    <select id="your-gun"></select>
+    <br />
+    <button id="select-button" onclick='selectyourGun()'>select</button>
+    <button id="start-button" onclick='startGame()'>start game</button>
+</body>
+<script src="./script.js"></script>
+
+</html>

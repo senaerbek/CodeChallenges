@@ -1,0 +1,1 @@
+sena=10,player2=30,player3=5
